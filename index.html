@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Lunit -   The Photo Illustrator for Mac</title>
+
+  <style>
+    :root {
+      --dark: #325c51;
+      --mid: #479985;
+      --accent: #4ec29f;
+      --highlight: #34d7a4;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "San Francisco", "Helvetica Neue", Arial, sans-serif;
+      background: radial-gradient(circle at 20% 20%, #479985 0%, transparent 40%),
+                  radial-gradient(circle at 80% 30%, #34d7a4 0%, transparent 40%),
+                  linear-gradient(135deg, #325c51, #1f3f38);
+      color: white;
+      line-height: 1.6;
+      min-height: 100vh;
+    }
+
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px 40px;
+      backdrop-filter: blur(10px);
+      background: rgba(0,0,0,0.1);
+    }
+
+    header h1 {
+      font-size: 20px;
+      font-weight: 600;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin-left: 20px;
+      font-size: 14px;
+      opacity: 0.8;
+    }
+
+    nav a:hover {
+      opacity: 1;
+    }
+
+    .hero {
+      text-align: center;
+      padding: 120px 20px 100px;
+    }
+
+    .hero h2 {
+      font-size: 56px;
+      font-weight: 700;
+      margin-bottom: 20px;
+      background: linear-gradient(90deg, #ffffff, #4ec29f);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    .hero p {
+      font-size: 18px;
+      max-width: 600px;
+      margin: 0 auto 40px;
+      color: #d1d5db;
+    }
+
+    .btn {
+      background: linear-gradient(135deg, #34d7a4, #4ec29f);
+      color: #0f2e28;
+      padding: 16px 32px;
+      border-radius: 16px;
+      font-size: 16px;
+      font-weight: 600;
+      text-decoration: none;
+      transition: 0.3s;
+      display: inline-block;
+      box-shadow: 0 10px 30px rgba(52, 215, 164, 0.3);
+    }
+
+    .btn:hover {
+      transform: translateY(-3px) scale(1.02);
+      box-shadow: 0 15px 40px rgba(52, 215, 164, 0.5);
+    }
+
+    .features {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 30px;
+      padding: 80px 40px;
+    }
+
+    .card {
+      background: linear-gradient(145deg, rgba(255,255,255,0.08), rgba(255,255,255,0.02));
+      padding: 30px;
+      border-radius: 20px;
+      backdrop-filter: blur(20px);
+      border: 1px solid rgba(255,255,255,0.08);
+      transition: 0.3s;
+    }
+
+    .card:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 20px 40px rgba(0,0,0,0.3);
+    }
+
+    .card h3 {
+      margin-bottom: 10px;
+      color: var(--accent);
+    }
+
+    .card p {
+      color: #cbd5e1;
+      font-size: 14px;
+    }
+
+    footer {
+      text-align: center;
+      padding: 40px;
+      font-size: 14px;
+      opacity: 0.6;
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <h1>Lunit</h1>
+    
+  </header>
+
+  <section class="hero">
+    <h2>Edit & Illustrate Like a Pro</h2>
+    <p>A modern photo editor and illustration app for Mac. Create, edit, and design with precision and speed.</p>
+    <a href="#" class="btn">Download for macOS</a>
+  </section>
+
+  <section class="features">
+    <div class="card">
+      <h3>Lightning Fast</h3>
+      <p>Optimized for Intel Macs to deliver smooth and reliable performance.</p>
+    </div>
+
+    <div class="card">
+      <h3>Illustration Tools</h3>
+      <p>Vector brushes, shapes, and precision tools for creating stunning illustrations.</p>
+    </div>
+
+    <div class="card">
+      <h3>Mac App Experience</h3>
+      <p>Designed like a native macOS app with smooth interactions and familiar workflows.</p>
+    </div>
+  </section>
+
+  <footer>
+    © 2026 Lunit. Built for Mac.
+  </footer>
+
+</body>
+</html>
